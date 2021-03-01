@@ -7,7 +7,7 @@ public class Main : MonoBehaviour {
 
     void Start()
     {
-        var flags = BugSplat.MDSF_LOGCONSOLE | BugSplat.MDSF_LOGFILE | BugSplat.MDSF_NONINTERACTIVE;
+        var flags = BugSplat.MDSF_LOGCONSOLE | BugSplat.MDSF_LOGFILE;
         var additionalFilePath = Path.Combine(TempDir, "additionalFile.txt");
         File.WriteAllText(additionalFilePath, "Hello world!");
 
